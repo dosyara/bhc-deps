@@ -1,0 +1,19 @@
+{
+  "name": "bhc-deps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "pegjs": "^0.10.0"
+  },
+  "scripts": {
+    "generate": "pegjs --extra-options-file generator-options.json --output parser.js tmpl.pegjs"
+  },
+  "author": "",
+  "license": "ISC"
+}

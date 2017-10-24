@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const parseFile = require('../lib/get-bundle-deps');
+
+const filePath = process.argv[2];
+const workDir = process.cwd();
+
+console.time('parseFile');
+const deps = parseFile({ filePath, projectDir: workDir });
+console.timeEnd('parseFile');
+
+console.log(require('util').inspect(deps, { depth:null, colors:true }));

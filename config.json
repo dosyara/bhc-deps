@@ -1,0 +1,40 @@
+{
+  "labels": {
+    "components": "affiliates/bookings2/static",
+    "defaultstmpl": "affiliates/defaults/html_templates/general",
+    "defaultscss": "affiliates/defaults/static/css",
+    "defaultsjs": "affiliates/defaults/static/js",
+    "emailtmpl": "affiliates/defaults/html_templates/general/emails",
+    "emailcss": "affiliates/defaults/html_templates/general/emails/css",
+    "emailcomponents": "affiliates/defaults/html_templates/general/emails/components",
+    "bookings2components": "affiliates/bookings2/components",
+    "bookings2tmpl": "affiliates/bookings2/html_templates/general",
+    "bookings2css": "affiliates/bookings2/static/css",
+    "bookings2scss": "affiliates/bookings2/static/scss",
+    "bookings2js": "affiliates/bookings2/static/js",
+    "touch2components": "affiliates/touch2/components",
+    "touch2tmpl": "affiliates/touch2/html_templates/general",
+    "touch2css": "affiliates/touch2/static/css",
+    "touch2js": "affiliates/touch2/static/js",
+    "mobiletmpl": "affiliates/mobile/html_templates/general",
+    "mobilecss": "affiliates/mobile/static/css",
+    "mobilejs": "affiliates/mobile/static/js",
+    "villastmpl": "affiliates/villas/html_templates/general",
+    "villascss": "affiliates/villas/static/css",
+    "villassass": "affiliates/villas/static/sass",
+    "villasjs": "affiliates/villas/static/js",
+    "chat2booktmpl": "affiliates/chat2book/html_templates/general",
+    "chat2bookcss": "affiliates/chat2book/static/css",
+    "chat2booksass": "affiliates/chat2book/static/sass",
+    "chat2bookjs": "affiliates/chat2book/static/js"
+  },
+  "searchPaths": [
+    "affiliates/bookings2/html_templates/general",
+    "affiliates/bookings2/html_templates/general/inc",
+    "affiliates/defaults/html_templates/general",
+    "affiliates/defaults/html_templates/general/inc"
+  ],
+  "ignoreFiles": [
+    "affiliates/bookings2/html_templates/general/inc/bookFooter.inc"
+  ]
+}

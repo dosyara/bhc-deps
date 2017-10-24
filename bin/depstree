@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const parseFile = require('../lib/deps-parser');
+
+const filePath = process.argv[2];
+const workDir = process.cwd();
+
+const deps = parseFile({ filePath: path.resolve(filePath), projectDir: workDir });
+
+console.log(require('util').inspect(deps, {depth:null,colors:true}));

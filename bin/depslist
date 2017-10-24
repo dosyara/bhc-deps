@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const parseFile = require('../lib/deps-parser');
+
+const filePath = process.argv[2];
+const workDir = process.cwd();
+
+const deps = parseFile({ filePath: path.resolve(filePath), projectDir: workDir });
+
+(function printDeps(deps, fullList) {
+    deps.forEach(dep => {
+        if (!fullList.includes(dep.file)) {
+            console.log(dep.file);
+
+            fullList.push(dep.file);
+
+            if (dep.deps) {
+                printDeps(dep.deps, fullList);
+            }
+        }
+    });
+})(deps, []);

@@ -1,0 +1,13 @@
+*.iml
+*.log
+*.out
+*.pid
+*.seed
+*.sublime-*
+.DS_Store
+.idea
+.project
+coverage
+node_modules
+npm-debug.log
+*.map
