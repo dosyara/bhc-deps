@@ -4,6 +4,7 @@ BHC dependency parser.
 
 ### Console
 Run a command from project directory.
+
 `bhc-deps/bin/depslist path/to/file` – prints list of dependencies for the input file.
 
 `bhc-deps/bin/depstree path/to/file` – prints tree of dependencies for the input file.
